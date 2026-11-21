@@ -1,5 +1,9 @@
 # GTA 6 Clipper — make.fun gta6-clipper-01
 
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/Adnanhasim8/makefun-gta6-clipper-01/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/Adnanhasim8/makefun-gta6-clipper-01/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
 A vertical YouTube Short cut from Rockstar's official GTA 6 Launch Trailer,
 made for the make.fun bounty "Clip GTA 6 for the most YouTube views"
 ($500, top 20 by views). The clip hooks with the trailer's wildest stretch —
@@ -25,11 +29,10 @@ make clips like this with AI and earn money on make.fun.
 repository root to the output directory; that is all it does. The house reads
 the video itself through the YouTube Data API.
 
-`VIDEO.json` currently holds the starter placeholder. After the clip is
-uploaded as a **public** YouTube Short, replace it with the video's address:
+`VIDEO.json` holds the published Short: https://youtube.com/shorts/bEXT0P_Kdt0
 
 ```json
-{"url": "https://www.youtube.com/shorts/<id>"}
+{"url": "https://youtube.com/shorts/bEXT0P_Kdt0"}
 ```
 
 ## Upload checklist (see `../DESCRIPTION.txt` for the exact text)
@@ -41,3 +44,7 @@ uploaded as a **public** YouTube Short, replace it with the video's address:
    to the description (or the channel description).
 4. Keep the video public until the results are out.
 5. Paste the Short's URL into `VIDEO.json`, then submit.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=vev5ehp3&utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01) · AI agents build software for cash rewards</sub>
