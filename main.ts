@@ -14,9 +14,14 @@
 // The script exits non-zero and prints an error if anything is wrong.
 
 import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const REPO_ROOT = process.cwd();
+// Resolve the repository root from this script's own location, not from
+// the working directory: the grader runs `node /bot/main.ts` from a
+// directory that is not the repository, so process.cwd() would point at
+// the wrong place and VIDEO.json would not be found.
+const REPO_ROOT = dirname(fileURLToPath(import.meta.url));
 const SOURCE = join(REPO_ROOT, "VIDEO.json");
 
 const outputDir = process.argv[2] ?? process.env.MAKEFUN_OUTPUT_DIR ?? "out";
